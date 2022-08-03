@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free games app</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="https://demos.creative-tim.com/soft-ui-design-system/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="https://demos.creative-tim.com/soft-ui-design-system/assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/theme.css" />
+    <link rel="stylesheet" href="./assets/css/loopple/loopple.css" />
+    <link rel="icon" href="assets/img/favico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  </head>
+
+  <body>
+    <div class="toast toast-ingreso hide fade" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="assets/img/favico.ico" width="20px" class="rounded me-2" alt="..." />
+        <strong class="me-auto">Free Games App</strong>
+        <small class="text-muted">recién</small>
+
+        <i class="bi bi-check-lg mx-2" data-bs-dismiss="toast" aria-label="Close"></i>
+      </div>
+      <div class="toast-body">¡Hola! Que alegría tenerte de nuevo por aquí. Conservamos tu lista de juegos guardados.</div>
+    </div>
+
+    <div class="toast toast-registro hide fade" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="assets/img/favico.ico" width="20px" class="rounded me-2" alt="..." />
+        <strong class="me-auto">Free GamesApp</strong>
+        <small class="text-muted">recién</small>
+        <i class="bi bi-check-lg mx-2" data-bs-dismiss="toast" aria-label="Close"></i>
+
+      </div>
+      <div class="toast-body">Usuario creado con éxito. Elije los juegos que quieras probar. Puedes guardarte los que quieras en una lista para jugarlos más tarde.</div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a href="javascript:;" class="btn btn-sm bg-gradient-dark mb-0 me-auto d-lg-none d-block signUp userDataMob">Sign IN</a>
+        <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon mt-2">
+            <span class="navbar-toggler-bar bar1"></span>
+            <span class="navbar-toggler-bar bar2"></span>
+            <span class="navbar-toggler-bar bar3"></span>
+          </span>
+        </button>
+        <div class="collapse space-between navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+          <ul class="navbar-nav navbar-nav-hover">
+            <li class="nav-item mx-2">
+              <a class="nav-link ps-2 d-flex justify-content-between text-dark cursor-pointer align-items-center" href="index.html"> Free games app </a>
+              <!-- img logo -->
+            </li>
+          </ul>
+
+          <ul id="userNav" class="navbar-nav navbar-nav-hover">
+            <li class="nav-item mx-2">
+              <a class="nav-link ps-2 d-flex justify-content-between text-dark cursor-pointer align-items-center signUp" role="button"> Sign In </a>
+            </li>
+            <li class="nav-item dropdown mx-2">
+              <a class="nav-link ps-2 d-flex justify-content-between text-dark cursor-pointer align-items-center register" href="#">
+                Register Free
+                <i class="fa text-xs text-secondary ms-2 fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="video hide w-100 h-55 bg-light">
+      <video width="100%" src="assets/img/cod_.mp4" autoplay muted type="video/mp4" class="shadow-1"></video>
+      <div class="marca text-center">
+        <h1 class="text-white">FREE GAMES APP</h1>
+        <h6 class="text-white">Dev by Marcos Casas</h6>
+      </div>
+    </div>
+
+    <section id="divSignUp">
+      <div class="page-header min-vh-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+              <div class="card card-plain">
+                <div class="card-header bg-transparent pb-0 text-left">
+                  <h4 class="font-weight-bolder">Sign up in Free Games App</h4>
+                  <p class="mb-0">Usuario fer, contraseña pass</p>
+                </div>
+                <div class="card-body pb-3">
+                  <form>
+                    <label for="txt_user">Name</label>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="Name" aria-label="Name" id="txt_user" />
+                    </div>
+                    <label for="txt_pass">Password</label>
+                    <div class="mb-3">
+                      <input type="password" class="form-control" placeholder="Password" aria-label="Password" id="txt_pass" />
+                    </div>
+
+                    <div class="text-center">
+                      <button type="button" class="btn bg-gradient-primary w-100 mt-4 mb-0" id="bt_loguear">Sign up</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer text-center pt-0 px-sm-4 px-1">
+                  <p class="mb-4 mx-auto">
+                    You don't have an account?
+                    <a href="#" class="text-primary text-gradient font-weight-bold register">Register free</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+              <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center">
+                <img src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/shapes/pattern-lines.svg" alt="pattern-lines" class="position-absolute opacity-4 start-0" />
+
+                <div class="position-relative">
+                  <img class="max-width-500 w-100 position-relative z-index-2" src="assets/img/favico.webp" alt="image" />
+                </div>
+
+                <h2 class="mt-5 text-white font-weight-bolder">Free Games App</h2>
+                <p class="text-white">Developed by Marcos Casas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hide" id="divRegister">
+      <div class="page-header min-vh-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+              <div class="card card-plain">
+                <div class="card-header bg-transparent pb-0 text-left">
+                  <h4 class="font-weight-bolder">Register in Free Games App</h4>
+                </div>
+                <div class="card-body pb-3">
+                  <form>
+                    <label for="txt_user">Name</label>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="Name" aria-label="Name" id="txt_user_r" />
+                    </div>
+                    <!-- <label for="txt_email">Email</label>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="txt_email_r" />
+                    </div> -->
+                    <label for="txt_pass">Password</label>
+                    <div class="mb-3">
+                      <input type="password" class="form-control" placeholder="Password" aria-label="Password" id="txt_pass_r" />
+                    </div>
+
+                    <div class="form-check form-check-info text-left">
+                      <input class="form-check-input" type="checkbox" value="" checked="" />
+                      <label class="form-check-label" for="flexCheckDefault"> I agree the <a href="javascript:void(0);" class="text-dark font-weight-bolder">Terms and Conditions</a> </label>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn bg-gradient-primary w-100 mt-4 mb-0" id="bt_register">Registrarse</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer text-center pt-0 px-sm-4 px-1">
+                  <p class="mb-4 mx-auto">
+                    You have an account?
+                    <a href="#" class="text-primary text-gradient font-weight-bold signUp">Sign up</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+              <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center">
+                <img src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/shapes/pattern-lines.svg" alt="pattern-lines" class="position-absolute opacity-4 start-0" />
+
+                <div class="position-relative">
+                  <img class="max-width-500 w-50 position-relative z-index-2" src="assets/img/register.png" alt="image" />
+                </div>
+
+                <h2 class="mt-5 text-white font-weight-bolder">Free Games App</h2>
+                <p class="text-white">Developed by Marcos Casas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-dark d-flex justify-content-center">
+      <section id="lista" class="m-5 hide bg-light w-80">
+        <div class="page-header pt-5 bg-light rounded">
+          <div class="container w-90">
+            <div id="info">
+              <article>
+                <h2>¡Welcome again!</h2>
+              </article>
+
+              <section id="divDatos" class="ocultarDiv">
+                <hr />
+                <h3>Tus juegos</h3>
+                <div id="datos" class="bg-light div-games justify-content-start"></div>
+
+                <input type="button" id="bt_ocultar" value="Ocultar" class="btn bg-secondary text-white mt-4 mb-0 w-auto" />
+
+                <!-- BOTON ELIMINADO -->
+                <!-- 
+                <input type="button" id="bt_mostrar" value="Mostrar mis juegos" class="btn bg-gradient-primary mt-4 mb-0 w-auto" /> -->
+              </section>
+
+              <section id="divBusqueda">
+                <hr />
+                <h4>Conocé más juegos gratuitos</h4>
+                <p>
+                  Agregá los juegos que desees a tu lista. <br />
+                  Esta permanecerá registrada junto a tu usuario.
+                </p>
+                <input type="text" id="txt_buscar" class="form-control w-40" placeholder="Ingrese nombre" />
+                <input type="button" id="bt_mostrarListaJuegos" value="Mostrar juegos recomendados" class="btn success text-white mt-4 mb-0" />
+                <input type="button" value="Cerrar" id="bt_buscar" class="btn bg-gradient-primary mt-4 mb-0 hide" />
+
+                <hr />
+
+                <div id="resultadoBusqueda"></div>
+                <div id="div-games" class="hide div-games rounded bg-dark-gradient"></div>
+
+                <hr />
+                <hr />
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="games">
+      <div class="container">
+        <div>
+          <div id="guardados" class="hide"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with me on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="https://www.linkedin.com/in/marcos-c-5829369b/" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/maarcoscasas" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+
+
+
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+        © 2022 Dev by
+        <a class="text-reset fw-bold" href="https://github.com/maarcoscasas">Marcos Casas</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- scripts -->
+    <script src="codigo.js"></script>
+    <script src="https://loopple.s3.eu-west-3.amazonaws.com/soft-ui-design-system/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system/assets/js/soft-design-system.min.js?v=1.0.5" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/plugins/countup.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/plugins/flatpickr.min.js"></script>
+    <script src="assets/js/games.js"></script>
+
+    <script>
+
+    </script>
+  </body>
+</html>
