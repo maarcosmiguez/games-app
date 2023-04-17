@@ -12,7 +12,6 @@ let juegosCargados;
 let juegosGuardados;
 let juegoEncontrado = [];
 
-
 // DOM---------
 
 //------------------------------------------------------
@@ -53,7 +52,8 @@ let divInfo = document.querySelector("#info");
 let ocultarDiv = document.querySelector(".ocultarDiv");
 //-------------------------------------------------
 //EVENTOS
-btLoguear.addEventListener("click", ingresarApp);
+// btLoguear.addEventListener("click", ingresarApp);
+btLoguear.addEventListener("click", ingresoInvitado);
 bt_mostrarListaJuegos.addEventListener("click", cargarJuegos);
 bt_ocultarLista.addEventListener("click", ocultarLista);
 // btMostrar.addEventListener("click", mostrarLosJuegos);
@@ -67,7 +67,8 @@ bt_SignUp.forEach((e) => {
 
 txtBuscar.addEventListener("keyup", buscarJuego);
 btBuscar.addEventListener("click", resetBusqueda);
-btR.addEventListener("click", crearUsuario);
+// btR.addEventListener("click", crearUsuario);
+btR.addEventListener("click", ingresoInvitado);
 
 initApp();
 
@@ -175,6 +176,13 @@ function crearUsuario() {
     });
 }
 
+function ingresoInvitado() {
+  divLista.classList.remove("hide");
+  divSignUp.classList.add("hide");
+  divRegister.classList.add("hide");
+  ocultarRegistro();
+}
+
 // INGRESO
 function ingresarApp() {
   let userIngresado = txtUser.value;
@@ -218,7 +226,6 @@ function ingresarApp() {
       // aca aun lo guarda
       console.log(juegosCargados);
     });
-
 }
 
 console.log(juegosCargados);
@@ -299,7 +306,6 @@ function ocultarLista() {
   divGames.classList.add("hide");
   bt_ocultarLista.classList.add("hide");
   ocultarDiv.classList.add("hide");
-
 }
 
 function mostrarLosJuegos(juegosCargados) {
